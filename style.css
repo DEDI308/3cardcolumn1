@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Lexend+Deca&display=swap');
+
+:root {
+--orange:hsl(31, 77%, 52%);
+--cyan:hsl(184, 100%, 22%);
+--darkcyan: hsl(179, 100%, 13%);
+--gray: hsl(0, 0%, 95%);
+--twhite: rgba(255, 255, 255, 0.75)
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    border-radius: 0.5rem;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 25px;
+}
+
+.sedan {
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 25px;
+    
+}
+
+.sedan .btn {
+    color: var(--orange);
+}
+
+.sedan .btn:hover {
+    color: var(--gray);
+    background-color: var(--orange);
+    border: 2px solid var(--gray);
+}
+
+.suv {
+    background-color: var(--cyan);
+}
+
+.suv .btn {
+    color: var(--cyan);
+}
+
+.suv .btn:hover {
+    color: var(--gray);
+    background-color: var(--cyan);
+    border: 2px solid var(--gray);
+}
+
+.luxury {
+    background-color: var(--darkcyan);
+}
+
+.luxury .btn {
+    color: var(--darkcyan);
+}
+
+.luxury .btn:hover {
+    color: var(--gray);
+    background-color: var(--darkcyan);
+    border: 2px solid var(--gray);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.6em;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 13.3px;
+    line-height: 22px;
+}
+
+.btn {
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--gray);
+    margin-right: 4em;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sedan {
+        
+    }
+
+    .suv {
+         
+    }
+
+    .luxury {
+        
+    }
